@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerberos Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kerberos Authentication Simulation</h1>
+        <div class="login">
+            <h2>Step 1: Request TGT</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="requestTGT()">Request TGT</button>
+        </div>
+        <div class="service">
+            <h2>Step 2: Request Service Ticket</h2>
+            <input type="text" id="serviceName" placeholder="Service Name">
+            <button onclick="requestServiceTicket()">Request Service Ticket</button>
+        </div>
+        <div class="access">
+            <h2>Step 3: Access Service</h2>
+            <button onclick="accessService()">Access Service</button>
+        </div>
+        <div class="output">
+            <h2>Output</h2>
+            <pre id="output"></pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
