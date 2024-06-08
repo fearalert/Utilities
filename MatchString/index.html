@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Comparison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>String Comparison Tool</h2>
+        <div class="textarea-row">
+            <div class="textarea-container">
+                <textarea id="textarea1" placeholder="Enter first string..."></textarea>
+                <button class="copy-button" onclick="copyToClipboard('textarea1')">Copy</button>
+            </div>
+            <div class="textarea-container">
+                <textarea id="textarea2" placeholder="Enter second string..."></textarea>
+                <button class="copy-button" onclick="copyToClipboard('textarea2')">Copy</button>
+            </div>
+        </div>
+        <button class="action-button" onclick="compareStrings()">Compare Strings</button>
+        <button class="reset-button" onclick="resetTextareas()">Reset</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
