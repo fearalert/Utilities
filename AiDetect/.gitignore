@@ -1,0 +1,12 @@
+/node_modules
+
+
+# ENV Files
+/script/.env
+
+
+#.json files
+
+/package-lock.json
+
+

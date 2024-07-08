@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Detector Tool</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>AI Detector Tool</h2>
+        <div id = "textarea-container">
+            <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+            <div id="buttons-div">
+                <button id="humanizeButton" onclick="detectAndHumanize()">Check and Humanize</button>
+                <button id="resetButton" onclick="resetFields()">Reset</button>
+            </div>
+        </div>
+        <!-- <div id="loading" class="loading">Loading...</div> -->
+        <div id="result">
+            <h3>Result:</h3>
+            <p id="detectionResult"></p>
+            <h3>Humanized Version:</h3>
+            <p id="humanizedText"></p>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
