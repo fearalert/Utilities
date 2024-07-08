@@ -14,9 +14,11 @@ function compareStrings() {
     if (trimmedText1 === trimmedText2) {
         result.textContent = 'The strings match!';
         result.style.color = 'green';
+        alert(result.textContent);
     } else {
         result.textContent = 'The strings do not match.';
         result.style.color = 'red';
+        alert(result.textContent);
     }
 }
 
